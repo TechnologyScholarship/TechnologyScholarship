@@ -139,7 +139,7 @@
 			}
 			// Flatten to string to display
 			const output = courses.reduce(
-				(str, course) => `${str}${JSON.stringify(course)}\n`,
+				(str, course) => `${str}${JSON.stringify(course, null, 2)}\n`,
 				'Courses:\n');
 			document.getElementById('content').innerText = output;
 		}
